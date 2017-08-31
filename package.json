@@ -1,0 +1,20 @@
+{
+  "name": "flow-started",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vanessa <vanessapr.85@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build:babel": "babel src/ -d dist/",
+    "build": "yarn prebuild && yarn build:babel",
+    "flow-check": "flow check"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.53.1",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {}
+}
